@@ -18,9 +18,7 @@ const App = () => {
         avatar={user.avatar}
         tag={user.tag}
         location={user.location}
-        followersStats={user.stats.followers}
-        viewsStats={user.stats.views}
-        likesStats={user.stats.likes}
+        stats={user.stats}
       />
 
       <h2 className="task-title">2- Statistics Section</h2>

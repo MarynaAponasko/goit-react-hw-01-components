@@ -6,9 +6,7 @@ const Profile = ({
   avatar,
   tag,
   location,
-  followersStats,
-  viewsStats,
-  likesStats,
+  stats,
 }) => {
   return (
     <div className={css.profile}>
@@ -22,15 +20,15 @@ const Profile = ({
       <ul className={css.stats}>
         <li className={css.item}>
           <span className={css.label}>Followers</span>
-          <span className={css.quantity}>{followersStats}</span>
+          <span className={css.quantity}>{stats.followers}</span>
         </li>
         <li className={css.item}>
           <span className={css.label}>Views</span>
-          <span className={css.quantity}>{viewsStats}</span>
+          <span className={css.quantity}>{stats.views}</span>
         </li>
         <li className={css.item}>
           <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{likesStats}</span>
+          <span className={css.quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
@@ -41,9 +39,8 @@ Profile.propTypes = {
   userName: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
-  followersStats: PropTypes.number.isRequired,
-  viewsStats: PropTypes.number.isRequired,
-  likesStats: PropTypes.number.isRequired,
+  stats: PropTypes.object.isRequired
+ 
 };
 
 export default Profile;
