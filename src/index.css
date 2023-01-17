@@ -36,19 +36,18 @@ img {
   height: auto;
 }
 
-.task-title{
+.task-title {
   font-size: 25px;
   padding: 10px 0;
   color: rgba(0, 0, 0, 0.657);
   text-align: center;
-   padding-top: 20px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.alternatine{
-   font-size: 24px;
+.alternatine {
+  font-size: 24px;
   padding: 10px 0;
   color: rgba(0, 0, 0, 0.657);
   text-align: center;
   font-style: italic;
-
 }
